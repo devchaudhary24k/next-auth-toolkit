@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+  "plugins": ["react", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react/no-set-state": "off",
+    "prettier/prettier": "warn",
+    "react/jsx-uses-react": 1,
+    "react/jsx-fragments": 1,
+    "react/jsx-no-undef": 2,
+    "react/prop-types": 1,
+    "react/display-name": 1,
+    "react/self-closing-comp": 2
+  }
 }
